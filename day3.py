@@ -75,7 +75,7 @@ def factorial(num:int):
 
 # 6. Check weather given number is prime of not
 def check_prime(num:int):
-    isPalindrome:bool = True;
+    isPrime:bool = True;
     
     if num<=1:
         print("Not prime")
@@ -83,10 +83,10 @@ def check_prime(num:int):
 
     for i in range(2, int(num/2 + 1)):
         if(num%i == 0):
-            isPalindrome = False
+            isPrime = False
             break
     
-    if isPalindrome:
+    if isPrime:
         print(f"The number {num} is a prime number")
     else:
         print(f"The number {num} is not a prime")
